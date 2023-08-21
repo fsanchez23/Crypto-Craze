@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@color/teal_200"
+    >
+
+    <TextView
+        android:id="@+id/coinName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bitcoin"
+        android:textSize="22sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/coinPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coinName"
+        android:layout_marginStart="10dp"
+        android:text="$75000"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/marketCapVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Market Cap: 2415465"
+        android:layout_below="@id/coinPrice"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/change24Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 Hour Change: 2415465"
+        android:layout_below="@id/marketCapVal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/vol24Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 hour Volume: 2415465"
+        android:layout_below="@id/change24Val"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/coinChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/vol24Val"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+</RelativeLayout>
